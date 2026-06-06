@@ -1,4 +1,4 @@
-package org.woheller69.gptassist;
+package ir.ammari.bale;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
