@@ -32,5 +32,4 @@ android {
 
 dependencies {
     implementation 'androidx.webkit:webkit:1.12.1'
-    implementation 'com.github.xmha97:FreeDroidWarn:+'
 }
