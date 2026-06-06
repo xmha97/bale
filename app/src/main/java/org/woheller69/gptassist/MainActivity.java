@@ -69,8 +69,8 @@ public class MainActivity extends Activity {
     private CookieManager chatCookieManager = null;
     private final Context context = this;
     private SwipeTouchListener swipeTouchListener;
-    private String TAG ="gptAssist";
-    private String urlToLoad = "https://chatgpt.com/";
+    private String TAG ="Bale";
+    private String urlToLoad = "https://web.bale.ai/chat";
     private static boolean restricted = true;
 
     private static final ArrayList<String> allowedDomains = new ArrayList<String>();
