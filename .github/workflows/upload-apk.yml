@@ -18,10 +18,18 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Build APK
+      - name: Build Release APK
         run: ./gradlew assembleRelease --stacktrace
-      - name: Upload APK
+      - name: Build Bale APK
+        run: ./gradlew assembleBale --stacktrace
+      - name: Build Snapp APK
+        run: ./gradlew assembleSnapp --stacktrace
+      - name: Upload APKs
         uses: actions/upload-artifact@v5
         with:
           name: WebAPK
-          path: app/build/outputs/apk/release/app-release.apk
+          path: |
+            app/build/outputs/apk/release/*.apk
+            app/build/outputs/apk/bale/*.apk
+            app/build/outputs/apk/snapp/*.apk
+            
