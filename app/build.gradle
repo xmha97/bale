@@ -4,10 +4,10 @@ plugins {
 
 android {
     compileSdk 35
-    namespace 'ir.ammari.bale'
+    namespace 'ir.ammari.webapk'
     android.buildFeatures.buildConfig true
     defaultConfig {
-        applicationId "ir.ammari.bale"
+        applicationId "ir.ammari.webapk"
         minSdk 21
         targetSdk 35
         versionCode 240
