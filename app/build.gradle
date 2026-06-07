@@ -20,6 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.debug
         }
+        create("bale") {
+            isMinifyEnabled = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            applicationIdSuffix = ".bale"
+        }
+        create("snapp") {
+            isMinifyEnabled = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            applicationIdSuffix = ".snapp"
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
